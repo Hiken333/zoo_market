@@ -98,22 +98,22 @@ flowchart LR
 
     subgraph Platform [Граница системы Pet Ecosystem]
         subgraph UC_Goods [Товарный маркетплейс]
-            UC1(Поиск товаров<br/>с автоисправлением)
-            UC2(Покупка товаров<br/>и сплит платежа)
-            UC3(Размещение товаров<br/>и управление FBS)
+            UC1(Поиск товаров с автоисправлением)
+            UC2(Покупка товаров и сплит платежа)
+            UC3(Размещение товаров и управление FBS)
         end
         
         subgraph UC_Services [Сервисная вертикаль и шеринг]
-            UC4(Просмотр объявлений<br/>питомников)
-            UC5(Онлайн-запись<br/>в клиники по API)
-            UC6(Заказ услуг<br/>выгула и груминга)
-            UC7(Прохождение верификации<br/>исполнителя)
+            UC4(Просмотр объявлений питомников)
+            UC5(Онлайн-запись в клиники по API)
+            UC6(Заказ услуг выгула и груминга)
+            UC7(Прохождение верификации исполнителя)
         end
 
         subgraph UC_Core [Ядро платформы и управление]
-            UC8(Создание профиля<br/>питомца)
-            UC9(Прямой донат<br/>в приюты)
-            UC10(Управление локальной<br/>логистикой и SaaS)
+            UC8(Создание профиля питомца)
+            UC9(Прямой донат в приюты)
+            UC10(Управление локальной логистикой и SaaS)
         end
     end
 
@@ -138,13 +138,14 @@ flowchart LR
 
     classDef client fill:#E8F5E9,stroke:#4CAF50,stroke-width:1.5px;
     classDef owner fill:#FFE3FE,stroke:#D652D0,stroke-width:1.5px;
-    classDef usecase fill:#E1F5FE,stroke:#0288D1,stroke-width:1.5px;
+    
+    %% Принудительно задаем фиксированную минимальную ширину и отступы для блоков
+    classDef usecase fill:#E1F5FE,stroke:#0288D1,stroke-width:1.5px,min-width:280px,padding:15px,max-width:350px;
     
     class A1 client;
     class A2,A3,A4 owner;
     class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10 usecase;
     style Platform fill:#FAFAFA,stroke:#9E9E9E,stroke-width:2px;
-
 
 ```
 
