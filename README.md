@@ -98,22 +98,22 @@ flowchart LR
 
     subgraph Platform [Граница системы Pet Ecosystem]
         subgraph UC_Goods [Товарный маркетплейс]
-            UC1("&nbsp;&nbsp;Поиск товаров с автоисправлением&nbsp;&nbsp;")
-            UC2("&nbsp;&nbsp;Покупка товаров и сплит платежа&nbsp;&nbsp;")
-            UC3("&nbsp;&nbsp;Размещение товаров и управление FBS&nbsp;&nbsp;")
+            UC1(Поиск товаров<br/>с автоисправлением)
+            UC2(Покупка товаров<br/>и сплит платежа)
+            UC3(Размещение товаров<br/>и управление FBS)
         end
         
         subgraph UC_Services [Сервисная вертикаль и шеринг]
-            UC4("&nbsp;&nbsp;Просмотр объявлений питомников&nbsp;&nbsp;")
-            UC5("&nbsp;&nbsp;Онлайн-запись в клиники по API&nbsp;&nbsp;")
-            UC6("&nbsp;&nbsp;Заказ услуг выгула и груминга&nbsp;&nbsp;")
-            UC7("&nbsp;&nbsp;Прохождение верификации исполнителя&nbsp;&nbsp;")
+            UC4(Просмотр объявлений<br/>питомников)
+            UC5(Онлайн-запись<br/>в клиники по API)
+            UC6(Заказ услуг<br/>выгула и груминга)
+            UC7(Прохождение верификации<br/>исполнителя)
         end
 
         subgraph UC_Core [Ядро платформы и управление]
-            UC8("&nbsp;&nbsp;Создание профиля питомца&nbsp;&nbsp;")
-            UC9("&nbsp;&nbsp;Прямой донат в приюты&nbsp;&nbsp;")
-            UC10("&nbsp;&nbsp;Управление локальной логистикой и SaaS&nbsp;&nbsp;")
+            UC8(Создание профиля<br/>питомца)
+            UC9(Прямой донат<br/>в приюты)
+            UC10(Управление локальной<br/>логистикой и SaaS)
         end
     end
 
@@ -144,6 +144,7 @@ flowchart LR
     class A2,A3,A4 owner;
     class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10 usecase;
     style Platform fill:#FAFAFA,stroke:#9E9E9E,stroke-width:2px;
+
 
 ```
 
